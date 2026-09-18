@@ -1,12 +1,12 @@
 body {
     margin: 0;
     color: #2f2118;
-    background: #f6f0e8;
+    background: #f9f4f7;
     font-family: Arial, sans-serif;
 }
 
 .page {
-    max-width: 920 px;
+    max-width: 920px;
     margin: 0 auto;
     padding: 32px 20px;
 }
@@ -14,17 +14,17 @@ body {
 .hero {
     padding: 36px;
     color: white;
-    background: #6f3b1f;
+    background: #951c6b;
     border-radius: 24px;
 }
 
 .eyebrow {
-    margin: 0.0 8px;
+    margin: 0 8px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
 }
 
-.products {
+.products-list {
     padding-left: 1.2rem;
 }
 
@@ -33,7 +33,33 @@ button {
     color: #2f2118;
     font-weight: 700;
     cursor: pointer;
-    background: #ffd166;
+    background: #d280bc;
     border: 0;
     border-radius: 999px;
+}
+.skip-link { position: absolute; left: -9999px; padding: 8px 12px; color: white; background: #2f2118; }
+.skip-link:focus { top: 8px; left: 8px; }
+.site-header { padding: 16px 20px; background: white; border-bottom: 1px solid #dccbbc; }
+.nav { max-width: 920px; margin: 0 auto; }
+.brand { display: inline-block; margin-bottom: 8px; color: #4b2715; font-weight: 800; text-decoration: none; }
+.nav ul { padding: 0; margin: 0; list-style: none; }
+.nav li { display: inline-block; margin-right: 12px; }
+.nav a[aria-current="page"] { font-weight: 800; }
+a:focus-visible,
+button:focus-visible { outline: 3px solid #2563eb; outline-offset: 3px; }
+.site-footer { padding: 24px 20px; color: white; text-align: center; background: #9c4d86; }
+
+img {
+    width: 400px;
+    height: auto;
+    display: block;
+}
+.site-footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
 }
