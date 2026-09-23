@@ -24,7 +24,7 @@ body {
     text-transform: uppercase;
 }
 
-.products-list {
+.product-list {
     padding-left: 1.2rem;
 }
 
@@ -50,10 +50,13 @@ button:focus-visible { outline: 3px solid #2563eb; outline-offset: 3px; }
 .site-footer { padding: 24px 20px; color: white; text-align: center; background: #9c4d86; }
 
 img {
-    width: 400px;
+    width: 500px;
+    max-width: 100%;
     height: auto;
     display: block;
+    margin-top: 0;
 }
+
 .site-footer a {
     color: white;
     text-decoration: none;
@@ -63,3 +66,10 @@ img {
 .site-footer a:hover {
     text-decoration: underline;
 }
+
+figure { margin: 0 0 24px; }
+figcaption { margin-top: 8px; color: #6b5b52; }
+table { width: 100%; border-collapse: collapse; }
+caption { margin-bottom: 8px; font-weight: 700; text-align: left; }
+th,
+td { padding: 10px; text-align: left; border: 1px solid #dccbbc; }
