@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kontak Cafe Light Rose - Website UMKM</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="JS/form.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#konten">Lewati ke konten utama</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Navigasi utama">
+        <a class="brand" href="index.html">Cafe Light Rose</a>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+          <li><a href="produk.html">Menu & Produk</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a aria-current="page" href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="konten" class="page">
+      <h1>Kontak Cafe Light Rose</h1>
+      <p>Silakan kirim pertanyaan tentang produk, menu, pesanan, reservasi atau kerja sama.</p>
+        <form id="form-kontak" action="#" method="post">
+         <div class="field">
+            <label for="nama"> Nama Lengkap</label>
+            <input id="nama" name="nama" type="text" autocomplete="name" required minlength="3"/>
+         </div>
+
+         <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="kategori">  jenis Menu atau produk yang diminati</label>
+            <select id="kategori" name="kategori" required>
+                <option value="">Pilih jenis Menu atau produk</option>
+                <option value="Minuman Kopi" >Minuman kopi signature</option>
+                <option value="Minuman Non-kopi">Minuman Non-kopi</option>
+                <option value="Makanan Kontinental">Makanan kontinental</option>
+                <option value="Makanan lokal">Makanan lokal Nusantara</option>
+                <option value="produk khas Cafe">Produk Kemasan Khas Cafe</option>
+            </select>
+          </div>
+
+           <div class="field">
+             <label for="menu-produk"> Nama Menu atau produk yang diminati</label>
+              <select id="menu-produk" name="menu-produk" required>
+                <option value="">Pilih Menu atau produk</option>
+                <option value="Rose Latte">Rose Latte</option>
+                <option value="Caramel Macchiato">Caramel Macchiato</option>
+                <option value="Vanilla Latte">Vanilla Latte</option>
+                <option value="Hazelnut Latte">Hazelnut Latte</option>
+                <option value="Matcha Latte">Matcha Latte</option>
+                <option value="Cold Brew Aren">Cold Brew Aren</option>
+                <option value="Americano">Americano</option>
+                <option value="Rose Tea">Rose Tea</option>
+                <option value="Thai Tea">Thai Tea</option>
+                <option value="Chocolate Cream">Chocolate Cream</option>
+                <option value="Strawberry Milk">Strawberry Milk</option>
+                <option value="Lemon Tea">Lemon Tea</option>
+                <option value="Bruschetta">Bruschetta</option>
+                <option value="Cream Soup">Cream Soup</option>
+                <option value="Garlic Bread">Garlic Bread</option>
+                <option value="Chicken Maryland">Chicken Maryland</option>
+                <option value="Beef Steak">Beef Steak</option>
+                <option value="Spaghetti Bolognese">Spaghetti Bolognese</option>
+                <option value="Fish and Chips">Fish and Chips</option>
+                <option value="Rose Cheesecake">Rose Cheesecake</option>
+                <option value="Chocolate Brownies">Chocolate Brownies</option>
+                <option value="Panna Cotta">Panna Cotta</option>
+                <option value="Soto Tauto Pekalongan">Soto Tauto Pekalongan</option>
+                <option value="Nasi Megono">Nasi Megono</option>
+                <option value="Mendoan">Mendoan</option>
+                <option value="Pindang Tetel">Pindang Tetel</option>
+                <option value="Rose Latte Signature">Rose Latte Signature</option>
+                <option value="Light Rose Blend Kopi bubuk">Light Rose Blend Kopi bubuk</option>
+                <option value="Cheesecake Rose">Cheesecake Rose</option>
+              </select>
+           </div>
+            <fieldset>
+          <legend>Topik pertanyaan</legend>
+            <label><input type="radio" name="topik" value="Menu & produk" required /> Informasi produk</label>
+            <label><input type="radio" name="topik" value="pesanan" /> Status pesanan</label>
+            <label><input type="radio" name="topik" value="kerja-sama" /> Kerja sama</label>
+          </fieldset>
+          <div class="field">
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan" rows="3" cols="75" required minlength="5"></textarea>
+          </div>
+          <div class="field">
+            <label for="whatsApp">Nomor WhatsApp</label>
+            <input id="whatsApp"name="whatsApp" type="tel"
+                    placeholder="+62xxxxxxxxxxx"
+                    required pattern="\+62[0-9]{9,13}$"/>
+            <small>Gunakan format +62 untuk nomor indonesia</small>
+          </div>
+          <fieldset>
+             <legend>Waktu preferensi kontak</legend>
+             <label><input type="radio" name="waktu" value="pagi" required /> Pagi (08.00–12.00)</label>
+             <label><input type="radio" name="waktu" value="siang" /> Siang (12.00–16.00)</label>
+             <label><input type="radio" name="waktu" value="malam" /> Malam (19.00–22.00)</label>
+         </fieldset>
+
+          <button type="submit">Tampilkan Preview</button>
+        </form>
+        <section aria-labelledby="preview-title">
+          <h2 id="preview-title">Preview Data</h2>
+          <pre id="preview-form" aria-live="polite">Data form akan muncul setelah tombol dikirim.</pre>
+        </section>
+       
+    </main>
+    <footer class="site-footer">
+      <p>&copy; 2026 Cafe Light Rose. Info lebih lanjut silahkan langsung hubungi nomor yang tertera dikontak.</p>
+    </footer>
+  </body>
+</html>

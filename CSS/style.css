@@ -8,7 +8,41 @@ body {
 .page {
     max-width: 920px;
     margin: 0 auto;
-    padding: 32px 20px;
+    padding: 16px 20px;
+}
+
+.sub-nav {
+    margin-bottom: 10px;
+}
+.sub-nav ul {
+
+    padding: 0;
+
+    margin: 0;
+
+    list-style: none;
+
+}
+
+.sub-nav li {
+
+    display: inline-block;
+
+}
+.sub-nav a {
+
+    color: #3e0f81;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+}
+
+.sub-nav a:hover {
+
+    text-decoration: underline;
+
 }
 
 .hero {
@@ -16,6 +50,14 @@ body {
     color: white;
     background: #951c6b;
     border-radius: 24px;
+}
+
+#profil button {
+  margin-bottom: 5px; 
+}
+
+#profil img {
+  margin-top: 5px; 
 }
 
 .eyebrow {
@@ -50,7 +92,7 @@ button:focus-visible { outline: 3px solid #2563eb; outline-offset: 3px; }
 .site-footer { padding: 24px 20px; color: white; text-align: center; background: #9c4d86; }
 
 img {
-    width: 500px;
+    width: 550px;
     max-width: 100%;
     height: auto;
     display: block;
@@ -73,3 +115,9 @@ table { width: 100%; border-collapse: collapse; }
 caption { margin-bottom: 8px; font-weight: 700; text-align: left; }
 th,
 td { padding: 10px; text-align: left; border: 1px solid #dccbbc; }
+
+.field { margin-bottom: 16px; }
+.field label { display: block; margin-bottom: 6px; }
+fieldset { margin: 0 0 16px; }
+#preview-form { padding: 16px; white-space: pre-wrap; background: white; border: 1px solid #dccbbc; }
+
