@@ -163,7 +163,7 @@ h3 {
 }
 
 h1{
-    font-size: clamp(2rem, 6vm, 3rem)
+    font-size: clamp(2rem, 6vw, 3rem)
 
 }
 
@@ -478,10 +478,108 @@ audio {
 }
 
 
-/* Tabel produk kemasan agar menyesuaikan layar */
 .table-scroll table.kemasan-table {
     width: 100%;
     min-width: 0;
     table-layout: fixed;
 }
 
+.js-product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: var(--space-4);
+}
+
+.js-product-card {
+    padding: var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    background: var(--color-surface);
+}
+
+.stock-badge {
+    display: inline-flex;
+    margin-block-start: var(--space-2);
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    background: #c7dff9;
+    color: #084488;
+}
+
+.stock-badge.warning {
+    background: #f9e5c7;
+    color: #75420f;
+}
+
+.stock-badge.empty {
+    background: #f9c3d1;
+    color: #a91d4c;
+}
+
+/* Default: laptop dengan layar lebar */
+.nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--color-text);
+  position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.hamburger::before {
+  top: -7px;
+}
+
+.hamburger::after {
+  top: 7px;
+}
+
+/* Layar kecil: navbar menjadi hamburger */
+@media (max-width: 60rem) {
+  .nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .nav ul#nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 12px 0;
+  }
+
+  .nav ul#nav-menu.is-open {
+    display: flex;
+  }
+}

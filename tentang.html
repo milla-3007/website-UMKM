@@ -5,13 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tentang Cafe Light Rose - Website UMKM</title>
    <link rel="stylesheet" href="./CSS/style.css" />
+   <script src="JS/app.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#konten">Lewati ke konten utama</a>
     <header class="site-header">
       <nav class="nav" aria-label="Navigasi utama">
         <a class="brand" href="index.html">Cafe Light Rose</a>
-        <ul>
+        <button 
+      class="nav-toggle" 
+      type="button"
+      aria-label="Buka menu navigasi"
+      aria-expanded="false"
+      aria-controls="nav-menu"
+      >
+      <span class="hamburger"></span>
+      </button>
+        <ul id="nav-menu">
           <li><a href="index.html">Beranda</a></li>
           <li><a href="tentang.html" aria-current="page">Tentang Kami</a></li>
           <li><a href="produk.html"> Menu & Produk</a></li>
@@ -61,5 +71,6 @@
       <p>&copy; 2026 Cafe Light Rose. Info Reservasi Hubungi <a href="https://wa.me/6283106510933" target="_blank">
     +62831-0651-0933 </a>.</p>
     </footer>
+    <script src="JS/navbar.js"></script>
   </body>
 </html>

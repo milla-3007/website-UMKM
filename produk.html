@@ -5,13 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Menu & Produk Cafe Light Rose - Website UMKM</title>
     <link rel="stylesheet" href="CSS/style.css" />
+    <script src="JS/app.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#konten">Lewati ke konten utama</a>
     <header class="site-header">
       <nav class="nav" aria-label="Navigasi utama">
         <a class="brand" href="index.html">Cafe Light Rose</a>
-        <ul>
+        <button 
+      class="nav-toggle" 
+      type="button"
+      aria-label="Buka menu navigasi"
+      aria-expanded="false"
+      aria-controls="nav-menu"
+      >
+      <span class="hamburger"></span>
+      </button>
+        <ul id="nav-menu">
           <li><a href="index.html">Beranda</a></li>
           <li><a href="tentang.html">Tentang Kami</a></li>
           <li><a aria-current="page" href="produk.html"> Menu & Produk</a></li>
@@ -23,6 +33,15 @@
     <main id="konten" class="page">
       <h1>Menu & Produk Cafe Light Rose</h1>
       <p>Temani hari, lengkapi kerja, sempurnakan momen.</p>
+
+      <section class="section" aria-labelledby="produk-dinamis-title">
+        <div class="section-header">
+          <p class="eyebrow"> Rekomedasi Menu </Menu></p>
+          <h2 id="produk-dinamis-title">Menu Favorit Cafe Light Rose</h2>
+          <p id="produk-ringkasan">Data produk akan dimuat melalui JavaScript</p>
+        </div>
+        <div id="produk-dinamis" class="js-product-grid"></div>
+      </section>
 
      <section aria-labelledby="kategori-title">
       <h2 id="kategori-title">Kategori menu</h2>
@@ -114,7 +133,7 @@
         </tr>
         <tr>
           <td>Cold Brew Aren</td>
-          <td>Rp 22.000</td>
+          <td>Rp 23.000</td>
         </tr>
         <tr>
           <td> Americano</td>
@@ -322,5 +341,6 @@
 </html>
       <p>&copy; 2026 Cafe Light Rose. info Reservasi & pemesanan Hubungi nomor yang tertera dikontak.</p>
     </footer>
+    <script src="JS/navbar.js"></script>
   </body>
 </html>
