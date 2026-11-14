@@ -34,14 +34,30 @@
       <h1>Menu & Produk Cafe Light Rose</h1>
       <p>Temani hari, lengkapi kerja, sempurnakan momen.</p>
 
-      <section class="section" aria-labelledby="produk-dinamis-title">
-        <div class="section-header">
-          <p class="eyebrow"> Rekomedasi Menu </Menu></p>
-          <h2 id="produk-dinamis-title">Menu Favorit Cafe Light Rose</h2>
-          <p id="produk-ringkasan">Data produk akan dimuat melalui JavaScript</p>
+      <section class="product-section" aria-labelledby="produk-title">
+        <div class="section-heading">
+          <p class="eyebrow"> Rekomedasi Menu</p>
+          <h2 id="produk-title">Menu Cafe Light Rose</h2>
+          <p id="produk-status" class="produk-status">Produk belum dimuat</p>
         </div>
-        <div id="produk-dinamis" class="js-product-grid"></div>
-        <p id="produk-unggulan">Produk unggulan akan ditentukan melalui JavaScript.</p>
+        <div class="filter-bar" aria-label="Filter kategori produk">
+          <button type="button" class="filter-button is-active" data-filter="Semua">Semua</button>
+          <button type="button" class="filter-button" data-filter="Minuman Kopi">Minuman Kopi</button>
+          <button type="button" class="filter-button" data-filter="Minuman Non-kopi">Minuman Non-kopi</button>
+          <button type="button" class="filter-button" data-filter="Makanan Kontinental">Makanan Kontinental</button>
+          <button type="button" class="filter-button" data-filter="Menu Lokal Nusantara">Menu Lokal Nusantara</button>
+        </div>
+
+        <div class="continental-categories" hidden>
+          <h3> Jenis Makanan Kontinental</h3>
+          <div class="subcategory-list">
+            <button type ="button" class="subcategory-button" data-subcategory="Appetizer">Appetizer</button>
+            <button type ="button" class="subcategory-button" data-subcategory="Main Course">Main Course</button>
+            <button type ="button" class="subcategory-button" data-subcategory="Dessert">Dessert</button>
+          </div>
+        </div>   
+
+        <div id="produk-grid" class="product-grid" aria-live="polite"></div>
       </section>
 
      <section aria-labelledby="kategori-title">
@@ -339,7 +355,6 @@
    </section>
   </main>
  <footer class="site-footer">
-</html>
       <p>&copy; 2026 Cafe Light Rose. info Reservasi & pemesanan Hubungi nomor yang tertera dikontak.</p>
     </footer>
 

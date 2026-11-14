@@ -521,6 +521,7 @@ audio {
 
 .stock-badge {
     display: inline-flex;
+    align-self: flex-start;
     margin-block-start: var(--space-2);
     padding: 0.25rem 0.6rem;
     border-radius: 999px;
@@ -540,7 +541,6 @@ audio {
     color: #a91d4c;
 }
 
-/* Default: laptop dengan layar lebar */
 .nav-toggle {
   display: none;
   align-items: center;
@@ -578,7 +578,6 @@ audio {
   top: 7px;
 }
 
-/* Layar kecil: navbar menjadi hamburger */
 @media (max-width: 60rem) {
   .nav {
     flex-direction: row;
@@ -598,10 +597,87 @@ audio {
     align-items: flex-start;
     width: 100%;
     margin: 0;
-    padding: 12px 0;
+    padding: 12px 0;ya
   }
 
   .nav ul#nav-menu.is-open {
     display: flex;
   }
+}
+
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-block: 1rem 1.5rem;
+}
+
+.filter-button {
+    border: 1px solid #d8c2b5;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #6f3b1f;
+    padding: 0.65rem 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button:focus-visible {
+    border-color: #6f3b1f;
+    outline: 3px solid rgb(111 59 31 / 20%);
+    outline-offset: 2px;
+}
+
+.filter-button.is-active {
+    background: #6f3b1f;
+    border-color: #6f3b1f;
+    color: #ffffff;
+}
+
+.continental-categories {
+    margin-block: 1rem 1.5rem;
+    padding: 1rem;
+    background: #fdf8f4;
+    border: 1px solid #dccbbc;
+    border-radius: 1rem;
+}
+
+.subcategory-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.subcategory-button {
+    padding: 0.6rem 1rem;
+    color: #764122;
+    background: #ffffff;
+    border: 1px solid #d8c2b5;
+    border-radius: 999px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.subcategory-button:hover,
+.subcategory-button:focus-visible {
+    background: #f9e9df;
+    border-color: #754226;
+    outline: 3px solid rgb(111 59 31 / 20%);
+    outline-offset: 2px;
+}
+
+.subcategory-button.is-active {
+    color: #ffffff;
+    background: #9c6b4f;
+    border-color: #6f3b1f;
+}
+
+.empty-state {
+    grid-column: 1 / -1;
+    border: 1px dashed #c4a995;
+    border-radius: 1rem;
+    padding: 1rem;
+    background: #fdf8f4;
+    color: #79543f;
 }
