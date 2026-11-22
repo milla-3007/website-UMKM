@@ -597,7 +597,7 @@ audio {
     align-items: flex-start;
     width: 100%;
     margin: 0;
-    padding: 12px 0;ya
+    padding: 12px 0;
   }
 
   .nav ul#nav-menu.is-open {
@@ -680,4 +680,23 @@ audio {
     padding: 1rem;
     background: #fdf8f4;
     color: #79543f;
+}
+.field-error,
+.form-feedback {
+  margin: 0;
+  color: #b91c1c;
+  font-weight: 700;
+}
+
+.field-error {
+  min-height: 1.4rem;
+}
+
+[aria-invalid="true"] {
+  border-color: #b91c1c;
+  box-shadow: 0 0 0 3px rgb(185 28 28 / 15%);
+}
+
+.form-feedback.success {
+  color: #166534;
 }
